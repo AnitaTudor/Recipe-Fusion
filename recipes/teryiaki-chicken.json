@@ -1,0 +1,158 @@
+{
+    "carrefour-parklake": {
+        "Chicken-breast": {
+            "Piept de pui dezosat Fragedo casoleta per kg ": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/piept-de-pui-dezosat-fragedo-casoleta-per-kg/799408",
+                "price": "24,49",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/33/18/a00f116142477ab8e6cf8222dac7.jpeg",
+                "producer": "FRAGEDO"
+            },
+            "Piept de pui dezosat Puiul Fericit Agricola per kg": {
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/piept-de-pui-dezosat-puiul-fericit-agricola-per-kg/654852",
+                "price": "34,49",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/77/b4/83fff962354be7b005be51b28dd1.jpeg",
+                "producer": "AGRICOLA"
+            },
+            "Piept de pui dezosat fara piele Family Pack Fragedo casoleta per kg": {
+                "link ": "https://www.bringo.ro/ro/carrefour_park_lake/products/piept-de-pui-dezosat-fara-piele-family-pack-fragedo-casoleta-per-kg/9802",
+                "price": "23,70",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/60/00/0f8f498e684f547e0e6b25799d41.jpeg",
+                "producer": "FRAGEDO"
+            }
+
+        },
+        "Olive-Oil": {
+            "Ulei masline Bio Voocreta 500ml ": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/ulei-masline-bio-voocreta-500ml/6165142",
+                "price": "32,25",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/61/12/df34b304033fd4a77d695664e888.png",
+                "producer": "KIDONAKIS"
+            },
+
+            "Ulei de masline extra virgin 500 ml Costa d'Oro ": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/ulei-de-masline-extra-virgin-500-ml-costa-doro/48765",
+                "price": "24,99",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/ca/0b/1fc689545407754c4f4428f06772.jpg",
+                "producer": "COSTA D`OR"
+            }
+
+        },
+
+        "Soy-Sauce": {
+            "Sos negru soia Blue Dragon 150 ml": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/sos-negru-soia-blue-dragon-150ml/503522",
+                "price": "8,15",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/0b/56/74c3c4565989e462702bddc48b8b.jpg",
+                "producer": "BLUE DRAGO"
+            },
+
+            "Sos Soia 150 ml Kikkoman": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/sos-soia-150-ml-kikkoman/213842",
+                "price": "12,00",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/03/05/8d2b7489a3ee9dc9d2706f72f8e8.jpg",
+                "producer": "KIKKOMAN"
+            }
+
+        },
+
+        "Brown-Sugar": {
+            "Zahar brun 500 g Demerara": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/zahar-brun-500-g-demerara/242465",
+                "price": "4,29",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/ee/2c/a2c6e3d1050f3cda5f7cd0006d23.jpg",
+                "producer": "BLUE DRAGON"
+            }
+
+
+
+        },
+
+        "Vinegar": {
+            "Otet alimentar de fermentatie Regal 1L": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/otet-alimentar-de-fermentatie-regal-1l/51469",
+                "price": "3,05",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/f8/75/a2ea2fe6d8d2689415cf7aa09463.jpeg",
+                "producer": "REGAL"
+            },
+
+            "Otet de mere Vincon Vrancea 500 ml ": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/otet-de-mere-vincon-vrancea-500ml/409627",
+                "price": "2,65",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/01/74/c969f1221a93d2431650aaff3bc7.jpeg",
+                "producer": "VINCON"
+            }
+
+
+
+        },
+
+        "Sesame-Seeds": {
+            "COLONIAL SUSAN 70G": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/colonial-susan-70g-1/5378358",
+                "price": "1,50",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/be/7d/b03a7338bfa5ebc882bb7412e16d.png",
+                "producer": "COLONIAL"
+            },
+
+            "Seminte de susan Bio AllGreen 100 g": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/seminte-de-susan-bio-allgreen-100-g/879036",
+                "price": "3,60",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/63/03/93bd79195398345e47bd5344644f.jpg",
+                "producer": "PROBIOS"
+            }
+
+
+
+        },
+
+        "Green-Onions": {
+            "Ceapa verde Romania per legatura": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/ceapa-verde-romania-per-legatura/90140",
+                "price": "0,99",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/44/4f/682e386bb5e99ff4a0370fa2816f.jpeg",
+                "producer": "N/A"
+            }
+
+
+
+        },
+
+        "Flour/Cornstarch": {
+
+            "Faina alba superioara 000 Dobrogea 1kg": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/faina-alba-superioara-000-dobrogea-1kg/415143",
+                "price": "3,55",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/58/87/ae878a2b4c15f2afc9f89b66088d.jpg",
+                "producer": "DOBROGEA"
+            }
+
+        },
+
+
+        "Garlic": {
+
+            "USTUROI VIOLET 225GR CRF": {
+
+                "link": "https://www.bringo.ro/ro/carrefour_park_lake/products/usturoi-violet-225gr-crf/9948876",
+                "price": "5,49",
+                "image": "https://storage.googleapis.com/bringoimg/web/cache/sylius_large/bc/98/f8aed9979faaa3068dcdea01ab92.jpeg",
+                "producer": "CRF LA PIA"
+            }
+
+        }
+
+
+    }
+}

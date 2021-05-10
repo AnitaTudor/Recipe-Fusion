@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Recipe Fusion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=" ../css/template.css ">
+<script src="../js_scripts/generate_recipe.js"></script>
+
+<body>
+
+
+
+    <header class="top-side-header">
+        <%-  include ("../fragments/header") %>
+    </header>
+
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="recipes">
+        <div class="w3-quarter">
+            <p>
+                <a href=""> <img src=" /images/teriyaki-chicken.jpg " alt="teriyaki-chicken-rice" onclick="generateRecipe()" style="width:100% "></a>
+            </p>
+            <h3>Teriyaki Chicken With Rice</h3>
+            <p>Delicious glazed chicken, served with puffy rice.</p>
+            <p>Healthy, easy to prepare,unexpensive.</p>
+        </div>
+    </div>
+
+    <footer>
+        <%-  include ("../fragments/footer") %>
+    </footer>
+
+
+</body>
