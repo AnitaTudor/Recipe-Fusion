@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>Recipe Fusion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=" ../css/template.css ">
+
+
+<body>
+
+
+
+    <header class="top-side-header">
+        <%-  include ("../fragments/header") %>
+    </header>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide " style="max-width:1600px;min-width:500px " id="home">
+        <img class="w3-image " src="/images/main.jpg " alt="Ingredients " width="1600 " height="800 ">
+        <div class="w3-display-middle">
+            <button class="get-started w3-center" onclick="window.location.href='/recipes';"><span>Get Started!</span></button>
+        </div>
+        <div class=" w3-padding-large ">
+            <h1 class="w3-xxlarge ">Optimal Ingredients</h1>
+        </div>
+    </header>
+    <!-- Page content -->
+    <div class="w3-content " style="max-width:1100px ">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64 " id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small ">
+                <img src="/images/about-us.jpg " class="w3-round w3-image w3-opacity-min " alt="Table Setting " width="600 " height="750 ">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large ">
+                <h1 class="w3-center ">About Us</h1><br>
+                <h5 class="w3-center ">Pandemic inspired solution</h5>
+                <p class="w3-large ">With home deliveries on the rise from the biggest retailers in the country, it's sometimes difficult to find good prices and good ingredients for your meals, as stock for these products is very volatile, especially right now, when the
+                    concept of deliveries for every-day produce is still new to a lot of people.</p>
+                <p class="w3-large w3-text-grey w3-hide-medium ">With this in mind, we thought of a solution where we make it our duty to find the best produce for healthy, nutritious meals that you, the user, can choose from after selecting a recipe and then select the ingredients that suit you best
+                    regarding quality-price wise from one of the stores near you. This makes it simple for the user to create his recipe with hand-picked ingredients, instead of doing the tedious search for below-average ingredients himself.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Locations Section -->
+        <div class="w3-row w3-padding-64 " id="locations">
+            <div class="w3-col l6 w3-padding-large ">
+                <h1 class="w3-center ">Our Locations</h1><br>
+                <h4>Carrefour Park Lake</h4>
+                <p class="w3-text-grey ">
+                    <a href="https://www.google.com/maps/place/Carrefour/@44.4221155,26.1500343,15z/data=!4m5!3m4!1s0x0:0x1b8d4f0dca85d9be!8m2!3d44.4221155!4d26.1500343 ">Park Lake, Str. Liviu Rebreanu nr. 4, București 031783</a>
+                    <p class="w3-text-grey ">Website used:
+                        <a href="https://www.bringo.ro/ro/store-details/carrefour_park_lake ">Bringo</a>
+                    </p>
+                </p><br>
+
+            </div>
+
+            <div class=" w3-col l6 w3-padding-large ">
+                <img src="/images/auchan.jpg " class="w3-round w3-image w3-opacity-min " alt="auchan " style="width:100% ">
+            </div>
+        </div>
+
+        <hr>
+
+
+        <!-- End page content -->
+    </div>
+
+
+    <footer>
+        <%-  include ("../fragments/footer") %>
+    </footer>
+
+
+</body>
+
+</html>
