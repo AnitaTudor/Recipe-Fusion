@@ -1,4 +1,3 @@
-//console.log(location)
 function get_recipe(clicked_recipe) {
 
     //alert(clicked_recipe);
@@ -15,20 +14,7 @@ function get_location(clicked_location) {
 
 
 function generate_recipe() {
-    //console.log(localStorage.getItem("recipe_clicked"));
-    var recipe_location = localStorage.getItem("recipe_clicked") + "_" + localStorage.getItem("location_clicked") + ".json";
-    var recipe_categ = localStorage.getItem("recipe_clicked") + "_" + localStorage.getItem("location_clicked") + "_cat";
-    //console.log(recipe_location);
-    const json_file = "../recipes/" + recipe_location;
-    //console.log(json_file);
-    //const fis = JSON.parse("json_file");
 
-    /* for (var key in fis) {
-        if (fis.hasOwnProperty(key)) {
-            console.log(key + " -> " + fis[key]);
-        }
-    }
-*/
 
     function loadJSON(callback) {
 
@@ -60,6 +46,7 @@ function generate_recipe() {
             recipe_title.classList = "w3-center";
             recipe_title.innerHTML = ingriedient;
             recipe_title.style.fontWeight = "bold";
+            recipe_title.style.fontSize = "60px";
             recipe_title.style.color = "SlateBlue";
             document.getElementById("recipe-content").appendChild(recipe_title);
 
@@ -67,7 +54,9 @@ function generate_recipe() {
                 //console.log(jsonresponse[ingriedient][item].title);
                 var recipe_items = document.createElement("input");
                 recipe_items.type = "checkbox";
-                recipe_items.name = jsonresponse[ingriedient][item].title;
+                recipe_items.classList = "price";
+                recipe_items.id = jsonresponse[ingriedient][item].title;
+                recipe_items.name = jsonresponse[ingriedient][item].price;
                 document.getElementById("recipe-content").appendChild(recipe_items);
 
                 var recipe_label = document.createElement("label");
@@ -81,6 +70,7 @@ function generate_recipe() {
                 item_price.innerHTML = jsonresponse[ingriedient][item].price;
                 item_price.style.color = "red";
                 item_price.style.fontSize = "30px";
+                item_price.classList = "test";
                 document.getElementById("recipe-content").appendChild(item_price);
 
                 var recipe_image = document.createElement("img");
@@ -93,7 +83,96 @@ function generate_recipe() {
             }
         }
 
+
+        var submit_input = document.createElement("input");
+        submit_input.type = "submit";
+        submit_input.value = "Submit";
+        submit_input.style.borderRadius = "4px";
+        submit_input.style.width = "30%";
+        submit_input.style.cursor = "pointer";
+        submit_input.style.backgroundColor = "#4CAF50";
+        //submit_input.classList = "get-started";
+        document.getElementById("recipe-content").appendChild(submit_input);
         //console.log(jsonresponse["piept pui"][0].image);
 
     });
+    var final_price = document.createElement("h1");
+    final_price.classList = "w3-center";
+    final_price.innerHTML = "Final price is: " + localStorage.getItem("sum") + "RON";
+    final_price.style.fontWeight = "bold";
+    final_price.style.color = "red";
+    document.getElementById("final-price").appendChild(final_price);
+
+    var receit = document.createElement("h1");
+    receit.classList = "w3-center";
+    receit.innerHTML = "Here are the items you have chosen: ";
+    receit.style.color = "gray";
+    document.getElementById("final-price").appendChild(receit);
+
+
+    var parser = localStorage.getItem("receit");
+    var receit_array = JSON.parse(parser);
+    console.log(receit_array);
+    for (var i = 0; i < receit_array.length; i++) {
+        var array_item = document.createElement("h1");
+        array_item.classList = "w3-center";
+        //array_item.style.display = "block";
+        array_item.innerHTML = receit_array[i];
+        array_item.style.fontSize = "27px";
+        document.getElementById("final-price").appendChild(array_item);
+
+    }
+
+    var recipe_location = localStorage.getItem("recipe_clicked");
+    if (recipe_location == "teryiaki-chicken") {
+        var section = document.createElement("h1");
+        section.classList = "w3-center";
+        section.id = "section_recipe";
+        document.getElementById("final-price").appendChild(section);
+        var go_cook = document.createElement("a");
+        go_cook.innerHTML = "Here is our recommended recipe";
+        go_cook.href = "https://www.retetepractice.ro/retete/pui-teriyaki-cu-orez";
+        document.getElementById("section_recipe").appendChild(go_cook);
+    }
+}
+
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+}
+
+function get_final_price() {
+
+    var elements = document.getElementsByClassName("price");
+    var sum = 0;
+    var receit = [];
+    //console.log(elements[0].checked);
+    for (var i = 0; i < elements.length; i++) {
+        var real_price;
+        if (elements[i].checked == true) {
+
+            if (elements[i].name.length == 8) {
+                real_price = elements[i].name.substring(0, 4);
+                real_price = real_price.replaceAt(1, ".");
+                real_price = Number(real_price);
+                receit.push(elements[i].id);
+
+            } else {
+
+                real_price = elements[i].name.substring(0, 5);
+                real_price = real_price.replaceAt(2, ".");
+                real_price = Number(real_price);
+                receit.push(elements[i].id);
+
+            }
+            sum += real_price;
+        }
+    }
+    console.log(sum);
+    console.log(receit);
+    localStorage.setItem("sum", sum.toFixed(2));
+    localStorage.setItem("receit", JSON.stringify(receit));
+
+
+
+
 }
