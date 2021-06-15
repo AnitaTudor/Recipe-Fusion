@@ -25,3 +25,17 @@ Branches : https://github.com/AnitaTudor/Recipe-Fusion/branches
   - dev-tudor branch - branch for tudor commits, merging with main via pull requests.
   - dev-luca branch - branch for luca commits, merging with main via pull requests.
   - dev-orzata branch - branch for andrei commits, merging with main via pull requests.
+Commits: https://github.com/AnitaTudor/Recipe-Fusion/commits
+## Bug Reporting
+Bug reporting was handled by opening an issue by the current dev, and linking to the issue a pull request with the fix that was approved and merged with the main project. 
+![alt-text](https://github.com/AnitaTudor/Recipe-Fusion/blob/main/images_barem/bug-reporting1.png)
+![alt-text](https://github.com/AnitaTudor/Recipe-Fusion/blob/main/images_barem/bug-reporting2.png)
+## Our Build Tool
+The build tool used was npm, which is a packet manager for JavaScript and it's very convinient to work with alongside Node Js, because it has dedicated packages for the framework that are easly used in a Web- Development environment.
+![alt-text](https://github.com/AnitaTudor/Recipe-Fusion/blob/main/images_barem/npm_install.png)
+![alt-text](https://github.com/AnitaTudor/Recipe-Fusion/blob/main/images_barem/npm_packages.png)
+## Desing Patterns
+Design pattern used: Creational,Builder. The application allows for the construction of a complex object with the form of "Recipe_Location", with its actual construction being separate from its representation, allowing the app to work for multiple recipe_locations combinations via localStorage.
+Resource aquisition: By having local storage act as a pseudo cookie, the refresh of static html pages wont affect the functionality of the app, as in the previous selected recipe_location combo will remain the same until a new selection is made by the user. That means that the app doesnt have to re-calculate the user section each time the generate_recipe page is refreshed.
+![alt-text](https://github.com/AnitaTudor/Recipe-Fusion/blob/main/images_barem/local_storage.png)
+ 			
