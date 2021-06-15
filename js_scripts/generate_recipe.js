@@ -109,7 +109,18 @@ function generate_recipe() {
     receit.style.color = "gray";
     document.getElementById("final-price").appendChild(receit);
 
+	var parser = localStorage.getItem("receit");
+	var receit_array = JSON.parse(parser);
+	console.log(receit_array);
+	for (var i = 0; i < receit_array.length; i++) {
+    var array_item = document.createElement("h1");
+    array_item.classList = "w3-center";
+    //array_item.style.display = "block";
+    array_item.innerHTML = receit_array[i];
+    array_item.style.fontSize = "27px";
+    document.getElementById("final-price").appendChild(array_item);
 
+}
 
 
     var recipe_location = localStorage.getItem("recipe_clicked");
@@ -159,6 +170,7 @@ function get_final_price() {
     console.log(sum);
     console.log(receit);
     localStorage.setItem("sum", sum.toFixed(2));
+	localStorage.setItem("receit", JSON.stringify(receit));
 
 
 
