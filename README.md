@@ -1,7 +1,6 @@
 # Recipe-Fusion
  web based app that determines your optimal ingredients for a recipe
  
-## Application Demo
 ## User Stories
 1.	As the father of a family of four, I want to know plenty of recipes I can cook for my family so that they won’t get bored of the same stuff.
 2.	My name is Mary, I want to know the cheapest options that I have available when it comes to making diner.
