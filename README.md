@@ -1,6 +1,6 @@
 # Recipe-Fusion
  web based app that determines your optimal ingredients for a recipe
-=======
+
 ## Application Demo
 ## User Stories
 1.	As the father of a family of four, I want to know plenty of recipes I can cook for my family so that they won’t get bored of the same stuff.
@@ -14,6 +14,8 @@
 9.	As someone who can never decide on anything, I need an app to tell me what to cook with minimal input from my part.
 10.	As a guy who likes to cook, I try to challenge myself to cook with new and interesting ingredients every day.
 
+## Application Demo
+## User Stories
 ## Design. UML
 ## Backlog Creation
 ## Features List
