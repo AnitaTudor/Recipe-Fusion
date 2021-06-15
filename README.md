@@ -1,6 +1,5 @@
 # Recipe-Fusion
  web based app that determines your optimal ingredients for a recipe
-<<<<<<< Updated upstream
 =======
 ## Application Demo
 ## User Stories
@@ -23,4 +22,3 @@
 ## Bug Reporting
 ## Our Build Tool
 ## Desing Patterns
->>>>>>> Stashed changes
