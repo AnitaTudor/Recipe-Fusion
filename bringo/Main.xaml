@@ -1,0 +1,349 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1037,1727" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:nj="clr-namespace:Newtonsoft.Json;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="219">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Design</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Converters</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Business</x:String>
+      <x:String>UiPath.Activities.Presentation</x:String>
+      <x:String>UiPath.Activities.Presentation.Converters</x:String>
+      <x:String>UiPath.CSV.Activities.Design</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Design</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Services</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Services.Helpers</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Properties</x:String>
+      <x:String>UiPath.Excel.Activities.Design.CSV</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Converters</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Business</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Business.ProjectResources.EditUi</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Business.HostedTools</x:String>
+      <x:String>UiPath.Excel.Activities.Design.Business.AddInContract</x:String>
+      <x:String>UiPath.Shared.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Services</x:String>
+      <x:String>UiPath.Shared.Activities.Services.Interfaces</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Properties</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities.Business.ChartModifications</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>UiPath</x:String>
+      <x:String>UiPath.OrchestratorClient.Utilities</x:String>
+      <x:String>UiPath.Orchestrator.Client.Utilities</x:String>
+      <x:String>UiPath.Orchestrator.Api</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared</x:String>
+      <x:String>UiPath.Shared.Telemetry.Services</x:String>
+      <x:String>UiPath.Shared.Telemetry.Contracts</x:String>
+      <x:String>UiPath.Shared.Text</x:String>
+      <x:String>UiPath.Shared.Models</x:String>
+      <x:String>UiPath.Shared.Orchestrator</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>UiPath.Activities.System.Encode</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Activities.System.Utilities</x:String>
+      <x:String>UiPath.Activities.System.Properties</x:String>
+      <x:String>UiPath.Activities.System.Compression</x:String>
+      <x:String>UiPath.Activities.System.Compression.Zip</x:String>
+      <x:String>UiPath.Activities.System.Compression.Workflow</x:String>
+      <x:String>UiPath.Activities.System.Clipboard</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core.Format</x:String>
+      <x:String>UiPath.Core.Format.Impl</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Core.Activities.Dialog</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Core.Activities.DateModifications</x:String>
+      <x:String>UiPath.Core.Activities.Utilities</x:String>
+      <x:String>UiPath.Core.Activities.Properties</x:String>
+      <x:String>Markdown.Xaml</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls</x:String>
+      <x:String>UiPath.Studio.RulesLibrary.Rules.Usage</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Utils</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Services</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Services.Interfaces</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Editors</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Controls</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Controls.PropertyEditors</x:String>
+      <x:String>UiPath.Obsolete.Activities.Design.Shared.Controls.Models</x:String>
+      <x:String>UiPath.Activities.System.Design.Utils</x:String>
+      <x:String>UiPath.Activities.System.Design.Telemetry.Events</x:String>
+      <x:String>UiPath.Activities.System.Design.Services</x:String>
+      <x:String>UiPath.Activities.System.Design.Properties</x:String>
+      <x:String>UiPath.Activities.System.Design.Editors.Encoding</x:String>
+      <x:String>UiPath.Activities.System.Design.Business</x:String>
+      <x:String>UiPath.Core.Activities.Editors</x:String>
+      <x:String>UiPath.Core.Activities.Design</x:String>
+      <x:String>UiPath.Core.Activities.Design.ViewModels</x:String>
+      <x:String>UiPath.Core.Activities.Design.Properties</x:String>
+      <x:String>UiPath.Core.Activities.Design.Extensions</x:String>
+      <x:String>UiPath.Core.Activities.Design.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Attributes</x:String>
+      <x:String>UiPath.CV.Activities.Design</x:String>
+      <x:String>UiPath.CV.Activities.Design.Windows</x:String>
+      <x:String>UiPath.CV.Activities.Design.ViewModels</x:String>
+      <x:String>UiPath.CV.Activities.Design.Services</x:String>
+      <x:String>UiPath.CV.Activities.Design.Recorder</x:String>
+      <x:String>UiPath.CV.Activities.Design.Properties</x:String>
+      <x:String>UiPath.CV.Activities.Design.Models</x:String>
+      <x:String>UiPath.CV.Activities.Design.Extensions</x:String>
+      <x:String>UiPath.CV.Activities.Design.Editors</x:String>
+      <x:String>UiPath.CV.Activities.Design.Controls</x:String>
+      <x:String>UiPath.CV.Activities.Design.Behaviors</x:String>
+      <x:String>UiPath.Studio.Workflow.Wizards.ViewModels</x:String>
+      <x:String>UiPath.Studio.Plugin.Workflow.Wizards</x:String>
+      <x:String>UiPath.Workflow</x:String>
+      <x:String>UiPath.Workflow.Wizards</x:String>
+      <x:String>UiPath.Workflow.Wizards.Views</x:String>
+      <x:String>UiPath.Workflow.Wizards.ViewModels</x:String>
+      <x:String>UiPath.Workflow.Wizards.Properties</x:String>
+      <x:String>UiPath.Workflow.Wizards.LocalizationResources</x:String>
+      <x:String>UiPath.Workflow.Wizards.ExportedWizards</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.UIAutomationNext.Properties</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData.ColumnFormats</x:String>
+      <x:String>UiPath.UIAutomationNext.Exceptions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Attributes</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary.ViewModels.DragDrop</x:String>
+      <x:String>UiPath.Shared.Activities.Design.ViewModels</x:String>
+      <x:String>UiPath.Shared.Activities.Design.ViewModels.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Utils</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Services</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Services.Interfaces</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Extensions</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Editors</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.RemoteResourceBrowser.Views</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.RemoteResourceBrowser.ViewModels</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.RemoteResourceBrowser.Services.Interfaces</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.RemoteResourceBrowser.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.RemoteResourceBrowser.Models.Interfaces</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.RemoteResourceBrowser.Models.Helpers</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.PropertyEditors</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Controls.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Design.Behaviors</x:String>
+      <x:String>UiPath.Shared.Recorder.Design.Actipro</x:String>
+      <x:String>UiPath.Shared.Recorder.Localization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.Windows</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.ViewModels</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.ViewModels.SyntaxEditor</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.ViewModels.SyntaxEditor.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.Recorder.Controls</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.PropertyEditors</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.Helpers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.Converters</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.Controls</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.ActivityFactory</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Win32</x:String>
+      <x:String>UiPath.CV.Services</x:String>
+      <x:String>UiPath.CV.Models</x:String>
+      <x:String>UiPath.CV.Extensions</x:String>
+      <x:String>UiPath.CV.Client</x:String>
+      <x:String>UiPath.CV.AutoAnchor</x:String>
+      <x:String>UiPath.Core.Activities.Design.Windows</x:String>
+      <x:String>UiPath.Core.Activities.Design.Services</x:String>
+      <x:String>UiPath.Core.Activities.Design.Scrape.Tesseract</x:String>
+      <x:String>UiPath.Core.Activities.Design.Scrape.Microsoft</x:String>
+      <x:String>UiPath.Core.Activities.Design.Scrape.MicrosoftAzure</x:String>
+      <x:String>UiPath.Core.Activities.Design.Scrape.GoogleCloud</x:String>
+      <x:String>UiPath.Core.Activities.Design.Editors</x:String>
+      <x:String>UiPath.Core.Activities.Design.SAP</x:String>
+      <x:String>UiPath.Core.Activities.Design.Designers.SAP</x:String>
+      <x:String>UiPath.Core.Activities.Design.Designers.ExportUiTree</x:String>
+      <x:String>UiPath.Core.Activities.Design.Controls</x:String>
+      <x:String>UiPath.Core.Activities.Design.Behaviors</x:String>
+      <x:String>UiPath.Core.Activities.Anchor2</x:String>
+      <x:String>UiPath.Shared.ImageComparison</x:String>
+      <x:String>UiPath.Shared.Anchor2</x:String>
+      <x:String>UiPath.Shared.Anchor2.AutoAnchor</x:String>
+      <x:String>UiPath.Shared.Anchor2.AutoAnchor.Contracts</x:String>
+      <x:String>UiPath.Shared.Anchor2.AutoAnchor.Impl</x:String>
+      <x:String>UiPath.UIAutomationCore.UiExplorer</x:String>
+      <x:String>UiPath.Core.Properties</x:String>
+      <x:String>UiPath.Core.OCR</x:String>
+      <x:String>UiPath.Core.Activities.UiTree</x:String>
+      <x:String>UiPath.Core.Activities.Attributes</x:String>
+      <x:String>UiPath.Core.Activities.Selectors</x:String>
+      <x:String>UiPath.Core.Activities.Scrape.Tesseract</x:String>
+      <x:String>UiPath.Core.Activities.Scrape.Microsoft</x:String>
+      <x:String>UiPath.Core.Activities.Scrape.MicrosoftAzure</x:String>
+      <x:String>UiPath.Core.Activities.Scrape.GoogleCloud</x:String>
+      <x:String>UiPath.Core.Activities.ScopeActivities</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.Core.Activities.Extensions</x:String>
+      <x:String>UiPath.Core.Activities.Element.Keyboard</x:String>
+      <x:String>UiPath.Core.Activities.Anchor2.Helpers</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Services</x:String>
+      <x:String>UiPath.CV.Activities.Models</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.CV.Activities.Extensions</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="43">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Extensions</AssemblyReference>
+      <AssemblyReference>UiPath.Interop</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomation.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Wizards</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="382,1562" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="s:String[]" Name="products" />
+      <Variable x:TypeArguments="sd:DataTable[]" Name="productDetails" />
+      <Variable x:TypeArguments="nj:JsonConvert" Name="jsonConvert" />
+      <Variable x:TypeArguments="x:String" Name="jsonData" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)" Name="productDetailsMap" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="idx" />
+      <Variable x:TypeArguments="x:String" Name="outputFileName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Read file with products" sap:VirtualizedContainerService.HintSize="340,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ReadProducts.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="s:String[]" x:Key="outputProds">[products]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SearchOnBringo" sap:VirtualizedContainerService.HintSize="340,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="SearchProducts.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="s:String[]" x:Key="productList">[products]</InArgument>
+        <OutArgument x:TypeArguments="sd:DataTable[]" x:Key="productDetails">[productDetails]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Assign sap:VirtualizedContainerService.HintSize="340,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)">[productDetailsMap]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)">[new Dictionary(Of String, DataTable)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InterruptibleDoWhile Condition="[idx&lt;products.Length]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="340,417" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[productDetailsMap(products(idx))]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[productDetails(idx)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[idx]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[idx+1]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+    </ui:InterruptibleDoWhile>
+    <Assign sap:VirtualizedContainerService.HintSize="340,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[jsonData]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[jsonConvert.SerializeObject(productDetailsMap)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="340,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Json file name" Title="Enter json file name">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[outputFileName]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:WriteTextFile DisplayName="Write Text File" FileName="[outputFileName+&quot;.json&quot;]" sap:VirtualizedContainerService.HintSize="340,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[jsonData.ToString]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="340,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[jsonConvert.SerializeObject(productDetails)]" />
+  </Sequence>
+</Activity>
